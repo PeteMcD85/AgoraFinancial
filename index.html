@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
     <script src="app.js" charset="utf-8"></script>
@@ -31,13 +31,15 @@
     </div>
     <div class="input-button">
       <div class="check">
-        <input type="checkbox" id="free-news" />
+        <input type="checkbox" class="newsletter-checkbox" />
         <span>I would like to recieve a free news letter</span>
       </div>
-      <button type="button">
+      <button type="button" class="register-reserve-button">
         Register for this FREE<br />
-        live Webinar Here!</button
-      ><br />
+        live Webinar Here!
+      </button>
+      <div class="submit-ok"></div>
+      <br />
     </div>
     <div class="time-left">
       <div id="Calender">
@@ -51,6 +53,7 @@
       </div>
       <div class="time-left-webinar">
         <p>TIME LEFT UNTIL THE WEBINAR STARTS...</p>
+        <div id="clockdiv"></div>
       </div>
     </div>
     <div id="profile-list">
@@ -61,7 +64,7 @@
       </div>
       <div class="list">
         <p>I'm going to show you...</p>
-        <ul class="check-box">
+        <ul>
           <li>
             <img src="image/CheckmarkBox.png" alt="Check mark Box image" />
             <span>
@@ -116,10 +119,13 @@
     <div class="arrow-down"></div>
     <div class="input-button">
       <div class="check">
-        <input type="checkbox" id="free-news" />
+        <input type="checkbox" class="newsletter-checkbox" />
         <span>I would like to recieve a free news letter</span>
       </div>
-      <button type="button">YES! Reserve My Spot Now! >></button>
+      <button type="button" class="register-reserve-button">
+        YES! Reserve My Spot Now! >>
+      </button>
+      <div class="submit-ok"></div>
     </div>
   </body>
 </html>
