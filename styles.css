@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 20px;
+  padding-bottom: 6em;
+}
+
+input {
+  margin: 25px;
+}
+
+button {
+  background-color: #005282;
+  border-radius: 10px;
+  width: 90%;
+  margin: 30px 0;
+  padding: 19px 50px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h1 {
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 1.25em 0;
+  width: 80%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.header-paragraph {
+  border-top: 2px solid #005282;
+}
+
+.header p {
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+  font-size: 1.28em;
+  margin: 15px;
+}
+
+.check {
+  font-size: 22px;
+  line-height: 0;
+  position: relative;
+  bottom: 20px;
+}
+
+.input-button {
+  text-align: center;
+}
+
+.time-left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: arial, sans-serif;
+  color: white;
+}
+
+#Calender {
+  background-color: #71a1be;
+}
+
+.time-left-webinar {
+  background-color: #71a1be;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.time-left p:nth-child(2) {
+  font-size: 1.7em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.time-left p {
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+.time-left p:nth-child(4) {
+  font-size: 1.3em;
+  font-weight: 500;
+  padding: 20px 20px 20px 40px;
+  line-height: 1.4em;
+}
+
+.time-left img {
+  padding: 20px;
+  height: 10em;
+}
+
+.profile {
+  text-align: center;
+  background-color: #05263a;
+  color: white;
+  padding: 25px;
+}
+
+.profile img {
+  width: 100%;
+  padding: 30px 10px 10px 0;
+}
+
+.profile p {
+  line-height: 1.4em;
+  font-family: arial, sans-serif;
+  font-style: italic;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+}
+
+.list {
+  margin: 0;
+  font-family: arial, sans-serif;
+  background-color: #ebebeb;
+}
+
+.list p {
+  margin: 0;
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 1.25em;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: flex;
+}
+
+ul li span {
+  line-height: 1.5em;
+  margin: 1em;
+}
+
+li img {
+  width: 120px;
+  height: 100px;
+  padding: 10px;
+}
+
+.warnin {
+  text-align: center;
+  background-color: #f58c99;
+  color: white;
+  padding: 10px;
+}
+
+.warnin img {
+  display: none;
+}
+
+.warnin p {
+  line-height: 1.4em;
+}
+
+.claim-spot {
+  text-align: center;
+  font-style: italic;
+  font-family: "Lato", sans-serif;
+  padding: 19px;
+  background-color: #05263a;
+  color: white;
+}
+
+.arrow-down {
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 60px solid #05263a;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0 auto;
+    width: 70%;
+    /* font-size: 16px; */
+  }
+
+  h1 {
+    font-size: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16em;
+  }
+  .header-paragraph {
+    border-top: 4px solid #005282;
+  }
+
+  .header p {
+    \font-size: 1.75em;
+  }
+
+  button {
+    width: 60%;
+    padding: 1em 1.5em;
+    font-size: 1.4em;
+  }
+
+  .time-left {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    grid-gap: 14px;
+  }
+
+  #profile-list {
+    display: flex;
+    margin: 20px 0;
+  }
+
+  .time-left-webinar p {
+    font-size: 1em;
+  }
+
+  .list {
+    margin: 0;
+    width: 60%;
+    padding-left: 1.4em;
+  }
+
+  .warnin {
+    text-align: center;
+  }
+
+  .warnin p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .warnin img {
+    display: inline;
+    width: 50px;
+    height: 50px;
+    margin-right: 2em;
+  }
+}
