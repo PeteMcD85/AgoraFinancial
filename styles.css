@@ -333,16 +333,15 @@ li img {
 
   #warnin p {
     display: flex;
-    font-size: 25px;
     align-items: center;
     justify-content: center;
   }
 
   #warnin img {
     display: inline;
+    font-size: 25px;
     width: 75px;
     height: 75px;
-    margin: 2em;
-    padding: 2em;
+    margin: 1em;
   }
 } /*  end of media query */
