@@ -22,8 +22,31 @@ button {
   padding: 19px 50px;
   color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
+}
+
+th {
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+th:nth-child(2),
+th:nth-child(3),
+th:nth-child(4) {
+  font-size: 0.6em;
+  padding: 8px;
+}
+
+td {
+  font-weight: 900;
+  font-size: 1.8em;
+}
+
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4) {
+  padding: 0;
 }
 
 h1 {
@@ -37,11 +60,20 @@ h1 {
   font-size: 20px;
 }
 
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+}
+
+/* +++++++++ #header ++++++++ */
+
 .header-paragraph {
+  width: 80%;
+  margin: 0 auto;
   border-top: 2px solid #005282;
 }
 
-.header p {
+#header p {
   text-align: center;
   font-family: "lato", sans-serif;
   font-weight: 600;
@@ -49,18 +81,28 @@ h1 {
   margin: 15px;
 }
 
-.check {
+/* +++++++ #input-button ++++++++ */
+#input-button {
+  text-align: center;
+}
+
+.check-mark-box {
   font-size: 22px;
-  line-height: 0;
   position: relative;
   bottom: 20px;
 }
 
-.input-button {
-  text-align: center;
+.check-mark-box span {
+  font-size: 25px;
 }
 
-.time-left {
+input.newsletter-checkbox {
+  zoom: 1.5;
+  padding: 10px;
+}
+
+/* ++++++ #time-left +++++++ */
+#time-left {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -68,7 +110,11 @@ h1 {
   color: white;
 }
 
-#Calender {
+.timer {
+  margin: 0 auto;
+}
+
+.Calender {
   background-color: #71a1be;
 }
 
@@ -78,18 +124,18 @@ h1 {
   line-height: 1.5em;
 }
 
-.time-left p:nth-child(2) {
+#time-left p {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+#time-left p:nth-child(2) {
   font-size: 1.7em;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-.time-left p {
-  font-size: 1em;
-  margin-bottom: 2em;
-}
-
-.time-left p:nth-child(4) {
+#time-left p:nth-child(4) {
   font-size: 1.3em;
   font-weight: 500;
   padding: 20px 20px 20px 40px;
@@ -98,8 +144,10 @@ h1 {
 
 .time-left img {
   padding: 20px;
-  height: 10em;
+  height: 12.5em;
 }
+
+/* +++++ #profile-list +++++ */
 
 .profile {
   text-align: center;
@@ -117,11 +165,6 @@ h1 {
   line-height: 1.4em;
   font-family: arial, sans-serif;
   font-style: italic;
-}
-
-h3 {
-  font-family: "Lato", sans-serif;
-  font-size: 30px;
 }
 
 .list {
@@ -157,31 +200,37 @@ li img {
   padding: 10px;
 }
 
-.warnin {
+/* ++++++ #warnin ++++++ */
+
+#warnin {
   text-align: center;
   background-color: #f58c99;
   color: white;
-  padding: 10px;
+  padding: 2px;
 }
 
-.warnin img {
+#warnin img {
   display: none;
 }
 
-.warnin p {
+#warnin p {
+  font-size: 27px;
   line-height: 1.4em;
 }
 
-.claim-spot {
+/* +++++++ #claim-spot +++++++ */
+#claim-spot {
   text-align: center;
   font-style: italic;
   font-family: "Lato", sans-serif;
+  font-size: 25px;
   padding: 19px;
   background-color: #05263a;
   color: white;
 }
 
-.arrow-down {
+/* +++++ #arrow-down +++++ */
+#arrow-down {
   margin: 0 auto;
   width: 0;
   height: 0;
@@ -190,11 +239,19 @@ li img {
   border-top: 60px solid #05263a;
 }
 
-@media only screen and (min-width: 768px) {
+/* ++++++++ @media for DeskTop Version ++++++++++++ */
+
+@media only screen and (min-width: 1100px) {
   body {
     margin: 0 auto;
     width: 70%;
     /* font-size: 16px; */
+  }
+
+  button {
+    width: 60%;
+    padding: 1em 1.5em;
+    font-size: 1.4em;
   }
 
   h1 {
@@ -207,29 +264,60 @@ li img {
     border-top: 4px solid #005282;
   }
 
-  .header p {
-    \font-size: 1.75em;
+  #header p {
+    font-size: 1.75em;
   }
 
-  button {
-    width: 60%;
-    padding: 1em 1.5em;
-    font-size: 1.4em;
+  input.newsletter-checkbox {
+    zoom: 2;
+    padding: 10px;
   }
 
-  .time-left {
+  .check-mark-box {
+    font-size: 28px;
+    line-height: 0;
+    position: relative;
+    bottom: 20px;
+  }
+
+  #time-left {
     display: grid;
     grid-template-columns: 1.2fr 2fr;
-    grid-gap: 14px;
-  }
-
-  #profile-list {
-    display: flex;
-    margin: 20px 0;
+    grid-gap: 16px;
   }
 
   .time-left-webinar p {
     font-size: 1em;
+  }
+
+  .timer {
+    width: 50%;
+  }
+
+  th {
+    font-size: 1.5em;
+  }
+
+  th:nth-child(2),
+  th:nth-child(3),
+  th:nth-child(4) {
+    font-size: 1.2em;
+  }
+
+  td {
+    font-size: 1.8em;
+  }
+
+  td:nth-child(2),
+  td:nth-child(3),
+  td:nth-child(4) {
+    font-size: 1.4em;
+  }
+
+  #profile-list {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
   }
 
   .list {
@@ -238,20 +326,20 @@ li img {
     padding-left: 1.4em;
   }
 
-  .warnin {
+  #warnin {
     text-align: center;
   }
 
-  .warnin p {
+  #warnin p {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .warnin img {
+  #warnin img {
     display: inline;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     margin-right: 2em;
   }
-}
+} /*  end of media query */
