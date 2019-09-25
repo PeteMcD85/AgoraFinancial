@@ -46,6 +46,7 @@ td {
 td:nth-child(2),
 td:nth-child(3),
 td:nth-child(4) {
+  font-size: 35px;
   padding: 0;
 }
 
